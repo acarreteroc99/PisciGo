@@ -1,5 +1,6 @@
 from PantallaInicial import *
 from RegistroUsuario import *
+from menuPreBooking import *
 import pymysql
 
 
@@ -27,11 +28,17 @@ class RegisterWindow(QtWidgets.QMainWindow, Ui_MainWindow):
 	def test_cancel(self):
 		self.close()
 
+class menuIntermedio(QtWidgets.QMainWindow, Ui_MainWindows):
+	def __init__(self, *args, **kwargs):
+		QtWidgets.QMainWindow.__init__(self, *args, **kwargs)
+		self.setupUi(self)
+
 class MainWindow(QtWidgets.QMainWindow, Ui_mainWindow):
 	def __init__(self, *args, **kwargs):
 		QtWidgets.QMainWindow.__init__(self, *args, **kwargs)
 		self.setupUi(self)
 		self.registerWindow=RegisterWindow()
+		self.intermedio=menuIntermedio()
 		self.pushButton_2.clicked.connect(self.showRegister)
 		self.pushButton.clicked.connect(self.login)
 
@@ -42,11 +49,13 @@ class MainWindow(QtWidgets.QMainWindow, Ui_mainWindow):
 		if self.lineEdit.text() and self.passwordLineEdit.text():	
 			if cursor.execute("SELECT * FROM User WHERE user_name=%s AND password=%s", (self.lineEdit.text(), self.passwordLineEdit.text())):
 				self.label.setText("Log In Correcto")
-				pass
+				self.intermedio.show()
+				self.close()
 			else:
 				self.label.setText("Log In Incorrecto")
 		else:
 			self.label.setText("Falta algún campo")
+
 
 
 if __name__ == "__main__":
