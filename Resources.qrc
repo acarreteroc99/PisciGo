@@ -1,0 +1,8 @@
+<RCC>
+  <qresource prefix="Piscina">
+    <file>piscinacomunitaria.jpg</file>
+  </qresource>
+  <qresource prefix="Logo">
+    <file>Logo.png</file>
+  </qresource>
+</RCC>
