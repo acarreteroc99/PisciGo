@@ -14,7 +14,7 @@ class RegisterWindow(QtWidgets.QMainWindow, Ui_MainWindow):
 
 	def test_apply(self):
 		if self.contrasenaLineEdit.text()==self.confContrasenaLineEdit.text():
-			print(self.usuarioLineEdit.text(),self.correoElectronicoLineEdit.text(),self.numContactLineEdit.text(),self.contrasenaLineEdit.text())
+			#print(self.usuarioLineEdit.text(),self.correoElectronicoLineEdit.text(),self.numContactLineEdit.text(),self.contrasenaLineEdit.text())
 
 			#query="""INSERT INTO User (user_name, user_email, user_phone, password) VALUES (%s, %s, %s, %s);""" % (self.usuarioLineEdit.text(),self.correoElectronicoLineEdit.text().replace("@", "%40"),self.numContactLineEdit.text(),self.contrasenaLineEdit.text())
 			query="INSERT INTO User (user_name, user_email, user_phone, password) VALUES (%s, %s, %s, %s);"
@@ -39,8 +39,14 @@ class MainWindow(QtWidgets.QMainWindow, Ui_mainWindow):
 		self.registerWindow.show()
 
 	def login(self):
-		#faltancosis
-		if cursor.execute("SELECT * FROM")
+		if self.lineEdit.text() and self.passwordLineEdit.text():	
+			if cursor.execute("SELECT * FROM User WHERE user_name=%s AND password=%s", (self.lineEdit.text(), self.passwordLineEdit.text())):
+				self.label.setText("Log In Correcto")
+				pass
+			else:
+				self.label.setText("Log In Incorrecto")
+		else:
+			self.label.setText("Falta algún campo")
 
 
 if __name__ == "__main__":
