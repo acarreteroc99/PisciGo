@@ -85,7 +85,7 @@
       <x>120</x>
       <y>370</y>
       <width>501</width>
-      <height>361</height>
+      <height>371</height>
      </rect>
     </property>
     <property name="text">
@@ -105,6 +105,22 @@
      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/Logo/Logo.png&quot; width=&quot;200&quot; height=&quot;200&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>300</y>
+      <width>121</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
@@ -119,7 +135,7 @@
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <resources>
-  <include location="Resources.qrc"/>
+  <include location="../Others/Resources.qrc"/>
  </resources>
  <connections/>
 </ui>
