@@ -17,23 +17,16 @@
    <widget class="QWidget" name="formLayoutWidget">
     <property name="geometry">
      <rect>
-      <x>70</x>
+      <x>80</x>
       <y>140</y>
       <width>411</width>
-      <height>281</height>
+      <height>371</height>
      </rect>
     </property>
     <layout class="QFormLayout" name="formLayout">
      <property name="formAlignment">
       <set>Qt::AlignCenter</set>
      </property>
-     <item row="1" column="1">
-      <widget class="QLineEdit" name="usuarioLineEdit">
-       <property name="text">
-        <string/>
-       </property>
-      </widget>
-     </item>
      <item row="0" column="1">
       <widget class="QLabel" name="usuarioLabel">
        <property name="text">
@@ -44,8 +37,68 @@
        </property>
       </widget>
      </item>
-     <item row="5" column="1">
-      <widget class="QLineEdit" name="passwordLineEdit">
+     <item row="1" column="1">
+      <widget class="QLineEdit" name="usuarioLineEdit">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QLabel" name="correoElectronicoLabel">
+       <property name="text">
+        <string>Correo Electrónico</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QLineEdit" name="correoElectronicoLineEdit">
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="12" column="1">
+      <widget class="QLabel" name="contrasenaLabel">
+       <property name="text">
+        <string>Contraseña</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="13" column="1">
+      <widget class="QLineEdit" name="contrasenaLineEdit">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="echoMode">
+        <enum>QLineEdit::Password</enum>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="14" column="1">
+      <widget class="QLabel" name="confContrasenaLabel">
+       <property name="text">
+        <string>Confirmar contraseña</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="15" column="1">
+      <widget class="QLineEdit" name="confContrasenaLineEdit">
        <property name="text">
         <string/>
        </property>
@@ -58,40 +111,72 @@
       </widget>
      </item>
      <item row="4" column="1">
-      <widget class="QLabel" name="passwordLabel">
+      <widget class="QLabel" name="numContactLabel">
        <property name="text">
-        <string>Password</string>
+        <string>Número de contacto</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignCenter</set>
        </property>
       </widget>
      </item>
-     <item row="6" column="1">
-      <widget class="QLabel" name="label">
-       <property name="text">
-        <string>Confirmar password</string>
-       </property>
+     <item row="5" column="1">
+      <widget class="QLineEdit" name="numContactLineEdit">
        <property name="alignment">
         <set>Qt::AlignCenter</set>
        </property>
       </widget>
      </item>
      <item row="7" column="1">
-      <widget class="QLineEdit" name="lineEdit"/>
+      <widget class="QLineEdit" name="numFamLineEdit">
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
      </item>
-     <item row="2" column="1">
-      <widget class="QLabel" name="label_2">
+     <item row="6" column="1">
+      <widget class="QLabel" name="numFamLabel">
        <property name="text">
-        <string>DNI/NIF</string>
+        <string>Número de familiares</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignCenter</set>
        </property>
       </widget>
      </item>
-     <item row="3" column="1">
-      <widget class="QLineEdit" name="lineEdit_2"/>
+     <item row="8" column="1">
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>Menores de 14</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="1">
+      <widget class="QLineEdit" name="lineEdit">
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="11" column="1">
+      <widget class="QLineEdit" name="lineEdit_2">
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="10" column="1">
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>Mayores de 70</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
      </item>
     </layout>
    </widget>
@@ -99,7 +184,7 @@
     <property name="geometry">
      <rect>
       <x>210</x>
-      <y>470</y>
+      <y>520</y>
       <width>156</width>
       <height>23</height>
      </rect>
@@ -111,7 +196,7 @@
    <widget class="QTextEdit" name="textEdit">
     <property name="geometry">
      <rect>
-      <x>190</x>
+      <x>210</x>
       <y>50</y>
       <width>171</width>
       <height>71</height>
