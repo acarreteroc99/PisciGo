@@ -1,0 +1,925 @@
+('E:\\BI\\equipo4\\build\\Logica\\PYZ-00.pyz',
+ [('os',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\os.py',
+   'PYMODULE'),
+  ('subprocess',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\subprocess.py',
+   'PYMODULE'),
+  ('selectors',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\selectors.py',
+   'PYMODULE'),
+  ('contextlib',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\contextlib.py',
+   'PYMODULE'),
+  ('threading',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\threading.py',
+   'PYMODULE'),
+  ('_threading_local',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\_threading_local.py',
+   'PYMODULE'),
+  ('signal',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\signal.py',
+   'PYMODULE'),
+  ('ntpath',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\ntpath.py',
+   'PYMODULE'),
+  ('string',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\string.py',
+   'PYMODULE'),
+  ('genericpath',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\genericpath.py',
+   'PYMODULE'),
+  ('posixpath',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\posixpath.py',
+   'PYMODULE'),
+  ('stat',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\stat.py',
+   'PYMODULE'),
+  ('multiprocessing.popen_fork',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\multiprocessing\\popen_fork.py',
+   'PYMODULE'),
+  ('multiprocessing.connection',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\multiprocessing\\connection.py',
+   'PYMODULE'),
+  ('multiprocessing.resource_sharer',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\multiprocessing\\resource_sharer.py',
+   'PYMODULE'),
+  ('multiprocessing.process',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\multiprocessing\\process.py',
+   'PYMODULE'),
+  ('xmlrpc.client',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\xmlrpc\\client.py',
+   'PYMODULE'),
+  ('xmlrpc',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\xmlrpc\\__init__.py',
+   'PYMODULE'),
+  ('gzip',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\gzip.py',
+   'PYMODULE'),
+  ('argparse',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\argparse.py',
+   'PYMODULE'),
+  ('textwrap',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\textwrap.py',
+   'PYMODULE'),
+  ('copy',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\copy.py',
+   'PYMODULE'),
+  ('gettext',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\gettext.py',
+   'PYMODULE'),
+  ('shutil',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\shutil.py',
+   'PYMODULE'),
+  ('zipfile',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\zipfile.py',
+   'PYMODULE'),
+  ('py_compile',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\py_compile.py',
+   'PYMODULE'),
+  ('importlib.machinery',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\importlib\\machinery.py',
+   'PYMODULE'),
+  ('importlib',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\importlib\\__init__.py',
+   'PYMODULE'),
+  ('importlib._bootstrap',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\importlib\\_bootstrap.py',
+   'PYMODULE'),
+  ('importlib._bootstrap_external',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\importlib\\_bootstrap_external.py',
+   'PYMODULE'),
+  ('importlib.metadata',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\importlib\\metadata.py',
+   'PYMODULE'),
+  ('importlib.abc',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\importlib\\abc.py',
+   'PYMODULE'),
+  ('configparser',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\configparser.py',
+   'PYMODULE'),
+  ('pathlib',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\pathlib.py',
+   'PYMODULE'),
+  ('email',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\email\\__init__.py',
+   'PYMODULE'),
+  ('email.parser',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\email\\parser.py',
+   'PYMODULE'),
+  ('email._policybase',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\email\\_policybase.py',
+   'PYMODULE'),
+  ('email.utils',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\email\\utils.py',
+   'PYMODULE'),
+  ('email._parseaddr',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\email\\_parseaddr.py',
+   'PYMODULE'),
+  ('calendar',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\calendar.py',
+   'PYMODULE'),
+  ('random',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\random.py',
+   'PYMODULE'),
+  ('hashlib',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\hashlib.py',
+   'PYMODULE'),
+  ('logging',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\logging\\__init__.py',
+   'PYMODULE'),
+  ('pickle',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\pickle.py',
+   'PYMODULE'),
+  ('pprint',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\pprint.py',
+   'PYMODULE'),
+  ('doctest',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\doctest.py',
+   'PYMODULE'),
+  ('unittest',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\unittest\\__init__.py',
+   'PYMODULE'),
+  ('unittest.signals',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\unittest\\signals.py',
+   'PYMODULE'),
+  ('unittest.main',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\unittest\\main.py',
+   'PYMODULE'),
+  ('unittest.runner',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\unittest\\runner.py',
+   'PYMODULE'),
+  ('unittest.loader',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\unittest\\loader.py',
+   'PYMODULE'),
+  ('unittest.suite',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\unittest\\suite.py',
+   'PYMODULE'),
+  ('unittest.case',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\unittest\\case.py',
+   'PYMODULE'),
+  ('unittest.async_case',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\unittest\\async_case.py',
+   'PYMODULE'),
+  ('asyncio',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\asyncio\\__init__.py',
+   'PYMODULE'),
+  ('asyncio.unix_events',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\asyncio\\unix_events.py',
+   'PYMODULE'),
+  ('asyncio.log',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\asyncio\\log.py',
+   'PYMODULE'),
+  ('asyncio.windows_events',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\asyncio\\windows_events.py',
+   'PYMODULE'),
+  ('asyncio.windows_utils',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\asyncio\\windows_utils.py',
+   'PYMODULE'),
+  ('asyncio.selector_events',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\asyncio\\selector_events.py',
+   'PYMODULE'),
+  ('ssl',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\ssl.py',
+   'PYMODULE'),
+  ('asyncio.proactor_events',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\asyncio\\proactor_events.py',
+   'PYMODULE'),
+  ('asyncio.base_subprocess',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\asyncio\\base_subprocess.py',
+   'PYMODULE'),
+  ('asyncio.subprocess',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\asyncio\\subprocess.py',
+   'PYMODULE'),
+  ('asyncio.streams',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\asyncio\\streams.py',
+   'PYMODULE'),
+  ('asyncio.queues',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\asyncio\\queues.py',
+   'PYMODULE'),
+  ('asyncio.runners',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\asyncio\\runners.py',
+   'PYMODULE'),
+  ('asyncio.trsock',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\asyncio\\trsock.py',
+   'PYMODULE'),
+  ('asyncio.staggered',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\asyncio\\staggered.py',
+   'PYMODULE'),
+  ('typing',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\typing.py',
+   'PYMODULE'),
+  ('asyncio.tasks',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\asyncio\\tasks.py',
+   'PYMODULE'),
+  ('contextvars',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\contextvars.py',
+   'PYMODULE'),
+  ('concurrent.futures',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\concurrent\\futures\\__init__.py',
+   'PYMODULE'),
+  ('concurrent.futures.thread',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\concurrent\\futures\\thread.py',
+   'PYMODULE'),
+  ('queue',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\queue.py',
+   'PYMODULE'),
+  ('concurrent.futures.process',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\concurrent\\futures\\process.py',
+   'PYMODULE'),
+  ('multiprocessing.queues',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\multiprocessing\\queues.py',
+   'PYMODULE'),
+  ('multiprocessing.synchronize',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\multiprocessing\\synchronize.py',
+   'PYMODULE'),
+  ('multiprocessing.heap',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\multiprocessing\\heap.py',
+   'PYMODULE'),
+  ('multiprocessing.resource_tracker',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\multiprocessing\\resource_tracker.py',
+   'PYMODULE'),
+  ('concurrent.futures._base',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\concurrent\\futures\\_base.py',
+   'PYMODULE'),
+  ('concurrent',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\concurrent\\__init__.py',
+   'PYMODULE'),
+  ('asyncio.base_tasks',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\asyncio\\base_tasks.py',
+   'PYMODULE'),
+  ('asyncio.locks',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\asyncio\\locks.py',
+   'PYMODULE'),
+  ('asyncio.sslproto',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\asyncio\\sslproto.py',
+   'PYMODULE'),
+  ('asyncio.transports',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\asyncio\\transports.py',
+   'PYMODULE'),
+  ('asyncio.base_events',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\asyncio\\base_events.py',
+   'PYMODULE'),
+  ('asyncio.protocols',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\asyncio\\protocols.py',
+   'PYMODULE'),
+  ('asyncio.futures',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\asyncio\\futures.py',
+   'PYMODULE'),
+  ('asyncio.events',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\asyncio\\events.py',
+   'PYMODULE'),
+  ('asyncio.exceptions',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\asyncio\\exceptions.py',
+   'PYMODULE'),
+  ('asyncio.coroutines',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\asyncio\\coroutines.py',
+   'PYMODULE'),
+  ('asyncio.base_futures',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\asyncio\\base_futures.py',
+   'PYMODULE'),
+  ('asyncio.format_helpers',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\asyncio\\format_helpers.py',
+   'PYMODULE'),
+  ('asyncio.constants',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\asyncio\\constants.py',
+   'PYMODULE'),
+  ('unittest.result',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\unittest\\result.py',
+   'PYMODULE'),
+  ('unittest.util',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\unittest\\util.py',
+   'PYMODULE'),
+  ('pdb',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\pdb.py',
+   'PYMODULE'),
+  ('getopt',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\getopt.py',
+   'PYMODULE'),
+  ('pydoc',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\pydoc.py',
+   'PYMODULE'),
+  ('webbrowser',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\webbrowser.py',
+   'PYMODULE'),
+  ('email.message',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\email\\message.py',
+   'PYMODULE'),
+  ('email.policy',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\email\\policy.py',
+   'PYMODULE'),
+  ('email.contentmanager',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\email\\contentmanager.py',
+   'PYMODULE'),
+  ('email.quoprimime',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\email\\quoprimime.py',
+   'PYMODULE'),
+  ('email.headerregistry',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\email\\headerregistry.py',
+   'PYMODULE'),
+  ('email.iterators',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\email\\iterators.py',
+   'PYMODULE'),
+  ('email.generator',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\email\\generator.py',
+   'PYMODULE'),
+  ('email._encoded_words',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\email\\_encoded_words.py',
+   'PYMODULE'),
+  ('quopri',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\quopri.py',
+   'PYMODULE'),
+  ('uu',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\uu.py',
+   'PYMODULE'),
+  ('optparse',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\optparse.py',
+   'PYMODULE'),
+  ('http.server',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\http\\server.py',
+   'PYMODULE'),
+  ('http',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\http\\__init__.py',
+   'PYMODULE'),
+  ('socketserver',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\socketserver.py',
+   'PYMODULE'),
+  ('mimetypes',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\mimetypes.py',
+   'PYMODULE'),
+  ('html',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\html\\__init__.py',
+   'PYMODULE'),
+  ('html.entities',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\html\\entities.py',
+   'PYMODULE'),
+  ('pydoc_data.topics',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\pydoc_data\\topics.py',
+   'PYMODULE'),
+  ('pydoc_data',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\pydoc_data\\__init__.py',
+   'PYMODULE'),
+  ('tty',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\tty.py',
+   'PYMODULE'),
+  ('platform',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\platform.py',
+   'PYMODULE'),
+  ('plistlib',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\plistlib.py',
+   'PYMODULE'),
+  ('pkgutil',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\pkgutil.py',
+   'PYMODULE'),
+  ('zipimport',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\zipimport.py',
+   'PYMODULE'),
+  ('runpy',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\runpy.py',
+   'PYMODULE'),
+  ('shlex',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\shlex.py',
+   'PYMODULE'),
+  ('glob',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\glob.py',
+   'PYMODULE'),
+  ('code',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\code.py',
+   'PYMODULE'),
+  ('codeop',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\codeop.py',
+   'PYMODULE'),
+  ('dis',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\dis.py',
+   'PYMODULE'),
+  ('opcode',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\opcode.py',
+   'PYMODULE'),
+  ('bdb',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\bdb.py',
+   'PYMODULE'),
+  ('cmd',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\cmd.py',
+   'PYMODULE'),
+  ('inspect',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\inspect.py',
+   'PYMODULE'),
+  ('ast',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\ast.py',
+   'PYMODULE'),
+  ('token',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\token.py',
+   'PYMODULE'),
+  ('difflib',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\difflib.py',
+   'PYMODULE'),
+  ('__future__',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\__future__.py',
+   'PYMODULE'),
+  ('_compat_pickle',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\_compat_pickle.py',
+   'PYMODULE'),
+  ('bisect',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\bisect.py',
+   'PYMODULE'),
+  ('email.feedparser',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\email\\feedparser.py',
+   'PYMODULE'),
+  ('email._header_value_parser',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\email\\_header_value_parser.py',
+   'PYMODULE'),
+  ('urllib',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\urllib\\__init__.py',
+   'PYMODULE'),
+  ('email.header',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\email\\header.py',
+   'PYMODULE'),
+  ('email.base64mime',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\email\\base64mime.py',
+   'PYMODULE'),
+  ('email.charset',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\email\\charset.py',
+   'PYMODULE'),
+  ('email.encoders',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\email\\encoders.py',
+   'PYMODULE'),
+  ('email.errors',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\email\\errors.py',
+   'PYMODULE'),
+  ('csv',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\csv.py',
+   'PYMODULE'),
+  ('tokenize',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\tokenize.py',
+   'PYMODULE'),
+  ('importlib.util',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\importlib\\util.py',
+   'PYMODULE'),
+  ('tarfile',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\tarfile.py',
+   'PYMODULE'),
+  ('lzma',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\lzma.py',
+   'PYMODULE'),
+  ('bz2',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\bz2.py',
+   'PYMODULE'),
+  ('fnmatch',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\fnmatch.py',
+   'PYMODULE'),
+  ('_compression',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\_compression.py',
+   'PYMODULE'),
+  ('xml.parsers.expat',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\xml\\parsers\\expat.py',
+   'PYMODULE'),
+  ('xml.parsers',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\xml\\parsers\\__init__.py',
+   'PYMODULE'),
+  ('xml',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\xml\\__init__.py',
+   'PYMODULE'),
+  ('xml.sax.expatreader',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\xml\\sax\\expatreader.py',
+   'PYMODULE'),
+  ('xml.sax.saxutils',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\xml\\sax\\saxutils.py',
+   'PYMODULE'),
+  ('urllib.request',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\urllib\\request.py',
+   'PYMODULE'),
+  ('getpass',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\getpass.py',
+   'PYMODULE'),
+  ('nturl2path',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\nturl2path.py',
+   'PYMODULE'),
+  ('ftplib',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\ftplib.py',
+   'PYMODULE'),
+  ('netrc',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\netrc.py',
+   'PYMODULE'),
+  ('http.cookiejar',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\http\\cookiejar.py',
+   'PYMODULE'),
+  ('urllib.response',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\urllib\\response.py',
+   'PYMODULE'),
+  ('urllib.error',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\urllib\\error.py',
+   'PYMODULE'),
+  ('xml.sax',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\xml\\sax\\__init__.py',
+   'PYMODULE'),
+  ('xml.sax.handler',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\xml\\sax\\handler.py',
+   'PYMODULE'),
+  ('xml.sax._exceptions',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\xml\\sax\\_exceptions.py',
+   'PYMODULE'),
+  ('xml.sax.xmlreader',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\xml\\sax\\xmlreader.py',
+   'PYMODULE'),
+  ('urllib.parse',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\urllib\\parse.py',
+   'PYMODULE'),
+  ('http.client',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\http\\client.py',
+   'PYMODULE'),
+  ('decimal',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\decimal.py',
+   'PYMODULE'),
+  ('_pydecimal',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\_pydecimal.py',
+   'PYMODULE'),
+  ('numbers',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\numbers.py',
+   'PYMODULE'),
+  ('base64',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\base64.py',
+   'PYMODULE'),
+  ('hmac',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\hmac.py',
+   'PYMODULE'),
+  ('multiprocessing.context',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\multiprocessing\\context.py',
+   'PYMODULE'),
+  ('multiprocessing.popen_forkserver',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\multiprocessing\\popen_forkserver.py',
+   'PYMODULE'),
+  ('multiprocessing.popen_spawn_posix',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\multiprocessing\\popen_spawn_posix.py',
+   'PYMODULE'),
+  ('multiprocessing.forkserver',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\multiprocessing\\forkserver.py',
+   'PYMODULE'),
+  ('multiprocessing.sharedctypes',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\multiprocessing\\sharedctypes.py',
+   'PYMODULE'),
+  ('ctypes',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\ctypes\\__init__.py',
+   'PYMODULE'),
+  ('ctypes._endian',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\ctypes\\_endian.py',
+   'PYMODULE'),
+  ('multiprocessing.pool',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\multiprocessing\\pool.py',
+   'PYMODULE'),
+  ('multiprocessing.dummy',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\multiprocessing\\dummy\\__init__.py',
+   'PYMODULE'),
+  ('multiprocessing.dummy.connection',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\multiprocessing\\dummy\\connection.py',
+   'PYMODULE'),
+  ('multiprocessing.managers',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\multiprocessing\\managers.py',
+   'PYMODULE'),
+  ('multiprocessing.shared_memory',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\multiprocessing\\shared_memory.py',
+   'PYMODULE'),
+  ('secrets',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\secrets.py',
+   'PYMODULE'),
+  ('multiprocessing.reduction',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\multiprocessing\\reduction.py',
+   'PYMODULE'),
+  ('tempfile',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\tempfile.py',
+   'PYMODULE'),
+  ('struct',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\struct.py',
+   'PYMODULE'),
+  ('socket',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\socket.py',
+   'PYMODULE'),
+  ('multiprocessing.util',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\multiprocessing\\util.py',
+   'PYMODULE'),
+  ('multiprocessing.popen_spawn_win32',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\multiprocessing\\popen_spawn_win32.py',
+   'PYMODULE'),
+  ('multiprocessing.spawn',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\multiprocessing\\spawn.py',
+   'PYMODULE'),
+  ('multiprocessing',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\multiprocessing\\__init__.py',
+   'PYMODULE'),
+  ('tracemalloc',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\tracemalloc.py',
+   'PYMODULE'),
+  ('stringprep',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\stringprep.py',
+   'PYMODULE'),
+  ('_py_abc',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\_py_abc.py',
+   'PYMODULE'),
+  ('datetime',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\datetime.py',
+   'PYMODULE'),
+  ('_strptime',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\_strptime.py',
+   'PYMODULE'),
+  ('pymysql',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\site-packages\\pymysql\\__init__.py',
+   'PYMODULE'),
+  ('pymysql.connections',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\site-packages\\pymysql\\connections.py',
+   'PYMODULE'),
+  ('pymysql._socketio',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\site-packages\\pymysql\\_socketio.py',
+   'PYMODULE'),
+  ('pymysql.util',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\site-packages\\pymysql\\util.py',
+   'PYMODULE'),
+  ('pymysql.protocol',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\site-packages\\pymysql\\protocol.py',
+   'PYMODULE'),
+  ('pymysql.optionfile',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\site-packages\\pymysql\\optionfile.py',
+   'PYMODULE'),
+  ('pymysql.cursors',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\site-packages\\pymysql\\cursors.py',
+   'PYMODULE'),
+  ('pymysql.constants.SERVER_STATUS',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\site-packages\\pymysql\\constants\\SERVER_STATUS.py',
+   'PYMODULE'),
+  ('pymysql.constants.CR',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\site-packages\\pymysql\\constants\\CR.py',
+   'PYMODULE'),
+  ('pymysql.constants.COMMAND',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\site-packages\\pymysql\\constants\\COMMAND.py',
+   'PYMODULE'),
+  ('pymysql.constants.CLIENT',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\site-packages\\pymysql\\constants\\CLIENT.py',
+   'PYMODULE'),
+  ('pymysql.charset',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\site-packages\\pymysql\\charset.py',
+   'PYMODULE'),
+  ('pymysql._auth',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\site-packages\\pymysql\\_auth.py',
+   'PYMODULE'),
+  ('pymysql.times',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\site-packages\\pymysql\\times.py',
+   'PYMODULE'),
+  ('pymysql.err',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\site-packages\\pymysql\\err.py',
+   'PYMODULE'),
+  ('pymysql.constants.ER',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\site-packages\\pymysql\\constants\\ER.py',
+   'PYMODULE'),
+  ('pymysql.converters',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\site-packages\\pymysql\\converters.py',
+   'PYMODULE'),
+  ('pymysql.constants.FLAG',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\site-packages\\pymysql\\constants\\FLAG.py',
+   'PYMODULE'),
+  ('pymysql.constants.FIELD_TYPE',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\site-packages\\pymysql\\constants\\FIELD_TYPE.py',
+   'PYMODULE'),
+  ('pymysql.constants',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\site-packages\\pymysql\\constants\\__init__.py',
+   'PYMODULE'),
+  ('pymysql._compat',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\site-packages\\pymysql\\_compat.py',
+   'PYMODULE'),
+  ('cancelarReserva', 'E:\\BI\\equipo4\\cancelarReserva.py', 'PYMODULE'),
+  ('PyQt5',
+   'c:\\users\\mi '
+   'pc\\appdata\\local\\programs\\python\\python38-32\\lib\\site-packages\\PyQt5\\__init__.py',
+   'PYMODULE'),
+  ('booking', 'E:\\BI\\equipo4\\booking.py', 'PYMODULE'),
+  ('infoPiscina', 'E:\\BI\\equipo4\\infoPiscina.py', 'PYMODULE'),
+  ('Resources_rc', 'E:\\BI\\equipo4\\Resources_rc.py', 'PYMODULE'),
+  ('PreBusqueda', 'E:\\BI\\equipo4\\PreBusqueda.py', 'PYMODULE'),
+  ('menuPreBooking', 'E:\\BI\\equipo4\\menuPreBooking.py', 'PYMODULE'),
+  ('RegistroUsuario', 'E:\\BI\\equipo4\\RegistroUsuario.py', 'PYMODULE'),
+  ('PantallaInicial', 'E:\\BI\\equipo4\\PantallaInicial.py', 'PYMODULE')])
