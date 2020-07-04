@@ -37,6 +37,9 @@ class Ui_MainWindowe(object):
         self.buttonBox.setGeometry(QtCore.QRect(150, 140, 156, 23))
         self.buttonBox.setStandardButtons(QtWidgets.QDialogButtonBox.Cancel|QtWidgets.QDialogButtonBox.Ok)
         self.buttonBox.setObjectName("buttonBox")
+        self.label_3 = QtWidgets.QLabel(self.centralwidget)
+        self.label_3.setGeometry(QtCore.QRect(180, 70, 131, 16))
+        self.label_3.setObjectName("label_3")
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(MainWindow)
         self.menubar.setGeometry(QtCore.QRect(0, 0, 466, 21))
@@ -54,6 +57,7 @@ class Ui_MainWindowe(object):
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
         self.label.setText(_translate("MainWindow", "<html><head/><body><p><img src=\":/Logo/Logo.png\"width=\"200\" height=\"200\"/></p></body></html>"))
         self.label_2.setText(_translate("MainWindow", "Inserta Código de Piscina"))
+        self.label_3.setText(_translate("MainWindow", ""))
 import Resources_rc
 
 

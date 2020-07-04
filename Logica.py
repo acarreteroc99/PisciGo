@@ -3,7 +3,13 @@ from RegistroUsuario import *
 from menuPreBooking import *
 from PreBusqueda import *
 from infoPiscina import *
+from booking import *
 import pymysql
+
+class book(QtWidgets.QMainWindow, Ui_MainWindowx):
+	def __init__(self, *args, **kwargs):
+		QtWidgets.QMainWindow.__init__(self, *args, **kwargs)
+		self.setupUi(self)
 
 class informacion(QtWidgets.QMainWindow, Ui_MainWindowi):
 	def __init__(self, *args, **kwargs):
@@ -31,6 +37,8 @@ class preBusqueda(QtWidgets.QMainWindow, Ui_MainWindowe):
 			self.infoPiscina.label_10.setText(str(data[10]))
 			self.infoPiscina.label_12.setText(str(data[9]))
 			self.infoPiscina.show()
+		else:
+			self.label_3.setText("No Existe Tal Código")
 
 	def cancel(self):
 		self.close()
