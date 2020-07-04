@@ -15,6 +15,7 @@ class Ui_MainWindows(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
         MainWindow.resize(533, 588)
+        MainWindow.setStyleSheet("background-color: \"#60ACE9\";")
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.verticalLayoutWidget = QtWidgets.QWidget(self.centralwidget)
@@ -24,6 +25,10 @@ class Ui_MainWindows(object):
         self.verticalLayout.setContentsMargins(0, 0, 0, 0)
         self.verticalLayout.setObjectName("verticalLayout")
         self.commandLinkButton = QtWidgets.QCommandLinkButton(self.verticalLayoutWidget)
+        self.commandLinkButton.setStyleSheet("font: 11pt \"Candara\";\n"
+"border: 2px solid white; \n"
+"border-radius: 10px;\n"
+"color: white; ")
         self.commandLinkButton.setObjectName("commandLinkButton")
         self.verticalLayout.addWidget(self.commandLinkButton)
         self.verticalLayoutWidget_2 = QtWidgets.QWidget(self.centralwidget)
@@ -33,6 +38,10 @@ class Ui_MainWindows(object):
         self.verticalLayout_2.setContentsMargins(0, 0, 0, 0)
         self.verticalLayout_2.setObjectName("verticalLayout_2")
         self.commandLinkButton_2 = QtWidgets.QCommandLinkButton(self.verticalLayoutWidget_2)
+        self.commandLinkButton_2.setStyleSheet("font: 11pt \"Candara\";\n"
+"border: 2px solid white; \n"
+"border-radius: 10px; \n"
+"color: white; ")
         self.commandLinkButton_2.setObjectName("commandLinkButton_2")
         self.verticalLayout_2.addWidget(self.commandLinkButton_2)
         self.label = QtWidgets.QLabel(self.centralwidget)

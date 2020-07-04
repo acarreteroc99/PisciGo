@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file '.\ui\infoPiscina.ui'
+# Form implementation generated from reading ui file '.\ui\infoPiscina_color.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.0
 #
@@ -14,70 +14,145 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_MainWindowi(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(419, 568)
+        MainWindow.resize(459, 571)
+        MainWindow.setStyleSheet("\n"
+"background-color: \"#60ACE9\";\n"
+"")
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
-        self.gridLayoutWidget = QtWidgets.QWidget(self.centralwidget)
-        self.gridLayoutWidget.setGeometry(QtCore.QRect(110, 130, 211, 361))
-        self.gridLayoutWidget.setObjectName("gridLayoutWidget")
-        self.gridLayout = QtWidgets.QGridLayout(self.gridLayoutWidget)
-        self.gridLayout.setContentsMargins(0, 0, 0, 0)
+        self.gridFrame = QtWidgets.QFrame(self.centralwidget)
+        self.gridFrame.setGeometry(QtCore.QRect(110, 130, 211, 361))
+        self.gridFrame.setStyleSheet("border-radius: 5px; \n"
+"border: 2px solid white; ")
+        self.gridFrame.setObjectName("gridFrame")
+        self.gridLayout = QtWidgets.QGridLayout(self.gridFrame)
         self.gridLayout.setObjectName("gridLayout")
-        self.label_3 = QtWidgets.QLabel(self.gridLayoutWidget)
+        self.label_3 = QtWidgets.QLabel(self.gridFrame)
+        self.label_3.setStyleSheet("color: white; \n"
+"border: none;\n"
+"font: 10pt \"Candara\";\n"
+"")
+        self.label_3.setAlignment(QtCore.Qt.AlignCenter)
         self.label_3.setObjectName("label_3")
         self.gridLayout.addWidget(self.label_3, 2, 0, 1, 1)
-        self.label_7 = QtWidgets.QLabel(self.gridLayoutWidget)
+        self.label_7 = QtWidgets.QLabel(self.gridFrame)
+        self.label_7.setStyleSheet("color: white; \n"
+"border: none;\n"
+"font: 10pt \"Candara\";\n"
+"")
+        self.label_7.setAlignment(QtCore.Qt.AlignCenter)
         self.label_7.setObjectName("label_7")
         self.gridLayout.addWidget(self.label_7, 4, 0, 1, 1)
-        self.label_9 = QtWidgets.QLabel(self.gridLayoutWidget)
+        self.label_9 = QtWidgets.QLabel(self.gridFrame)
+        self.label_9.setStyleSheet("color: white; \n"
+"border: none;\n"
+"font: 10pt \"Candara\";\n"
+"")
+        self.label_9.setAlignment(QtCore.Qt.AlignCenter)
         self.label_9.setObjectName("label_9")
         self.gridLayout.addWidget(self.label_9, 5, 0, 1, 1)
-        self.label_2 = QtWidgets.QLabel(self.gridLayoutWidget)
+        self.label_2 = QtWidgets.QLabel(self.gridFrame)
+        self.label_2.setStyleSheet("color: white; \n"
+"border: none;\n"
+"font: 10pt \"Candara\";\n"
+"")
         self.label_2.setText("")
+        self.label_2.setAlignment(QtCore.Qt.AlignCenter)
         self.label_2.setObjectName("label_2")
         self.gridLayout.addWidget(self.label_2, 1, 1, 1, 1)
-        self.label_4 = QtWidgets.QLabel(self.gridLayoutWidget)
+        self.label_4 = QtWidgets.QLabel(self.gridFrame)
+        self.label_4.setStyleSheet("color: white; \n"
+"border: none;\n"
+"font: 10pt \"Candara\";\n"
+"")
         self.label_4.setText("")
+        self.label_4.setAlignment(QtCore.Qt.AlignCenter)
         self.label_4.setObjectName("label_4")
         self.gridLayout.addWidget(self.label_4, 2, 1, 1, 1)
-        self.label = QtWidgets.QLabel(self.gridLayoutWidget)
+        self.label = QtWidgets.QLabel(self.gridFrame)
+        self.label.setStyleSheet("color: white; \n"
+"border: none;\n"
+"font: 10pt \"Candara\";\n"
+"")
+        self.label.setAlignment(QtCore.Qt.AlignCenter)
         self.label.setObjectName("label")
         self.gridLayout.addWidget(self.label, 1, 0, 1, 1)
-        self.label_5 = QtWidgets.QLabel(self.gridLayoutWidget)
+        self.label_5 = QtWidgets.QLabel(self.gridFrame)
+        self.label_5.setStyleSheet("color: white; \n"
+"border: none;\n"
+"font: 10pt \"Candara\";\n"
+"")
+        self.label_5.setAlignment(QtCore.Qt.AlignCenter)
         self.label_5.setObjectName("label_5")
         self.gridLayout.addWidget(self.label_5, 3, 0, 1, 1)
-        self.label_12 = QtWidgets.QLabel(self.gridLayoutWidget)
+        self.label_12 = QtWidgets.QLabel(self.gridFrame)
+        self.label_12.setStyleSheet("color: white; \n"
+"border: none;\n"
+"font: 10pt \"Candara\";\n"
+"")
         self.label_12.setText("")
+        self.label_12.setAlignment(QtCore.Qt.AlignCenter)
         self.label_12.setObjectName("label_12")
         self.gridLayout.addWidget(self.label_12, 6, 1, 1, 1)
-        self.label_6 = QtWidgets.QLabel(self.gridLayoutWidget)
+        self.label_6 = QtWidgets.QLabel(self.gridFrame)
+        self.label_6.setStyleSheet("color: white; \n"
+"border: none;\n"
+"font: 10pt \"Candara\";\n"
+"")
         self.label_6.setText("")
+        self.label_6.setAlignment(QtCore.Qt.AlignCenter)
         self.label_6.setObjectName("label_6")
         self.gridLayout.addWidget(self.label_6, 3, 1, 1, 1)
-        self.label_11 = QtWidgets.QLabel(self.gridLayoutWidget)
+        self.label_11 = QtWidgets.QLabel(self.gridFrame)
+        self.label_11.setStyleSheet("color: white; \n"
+"border: none;\n"
+"font: 10pt \"Candara\";\n"
+"")
+        self.label_11.setAlignment(QtCore.Qt.AlignCenter)
         self.label_11.setObjectName("label_11")
         self.gridLayout.addWidget(self.label_11, 6, 0, 1, 1)
-        self.label_8 = QtWidgets.QLabel(self.gridLayoutWidget)
+        self.label_8 = QtWidgets.QLabel(self.gridFrame)
+        self.label_8.setStyleSheet("color: white; \n"
+"border: none;\n"
+"font: 10pt \"Candara\";\n"
+"")
         self.label_8.setText("")
+        self.label_8.setAlignment(QtCore.Qt.AlignCenter)
         self.label_8.setObjectName("label_8")
         self.gridLayout.addWidget(self.label_8, 4, 1, 1, 1)
-        self.label_10 = QtWidgets.QLabel(self.gridLayoutWidget)
+        self.label_10 = QtWidgets.QLabel(self.gridFrame)
+        self.label_10.setStyleSheet("color: white; \n"
+"border: none;\n"
+"font: 10pt \"Candara\";\n"
+"")
         self.label_10.setText("")
+        self.label_10.setAlignment(QtCore.Qt.AlignCenter)
         self.label_10.setObjectName("label_10")
         self.gridLayout.addWidget(self.label_10, 5, 1, 1, 1)
-        self.label_13 = QtWidgets.QLabel(self.gridLayoutWidget)
+        self.label_13 = QtWidgets.QLabel(self.gridFrame)
+        self.label_13.setStyleSheet("color: white; \n"
+"border: none;\n"
+"font: 10pt \"Candara\";\n"
+"")
+        self.label_13.setAlignment(QtCore.Qt.AlignCenter)
         self.label_13.setObjectName("label_13")
         self.gridLayout.addWidget(self.label_13, 0, 0, 1, 1)
-        self.label_14 = QtWidgets.QLabel(self.gridLayoutWidget)
+        self.label_14 = QtWidgets.QLabel(self.gridFrame)
+        self.label_14.setStyleSheet("color: white; \n"
+"border: none;\n"
+"font: 10pt \"Candara\";\n"
+"")
         self.label_14.setText("")
+        self.label_14.setAlignment(QtCore.Qt.AlignCenter)
         self.label_14.setObjectName("label_14")
         self.gridLayout.addWidget(self.label_14, 0, 1, 1, 1)
         self.label_15 = QtWidgets.QLabel(self.centralwidget)
-        self.label_15.setGeometry(QtCore.QRect(170, 20, 101, 91))
+        self.label_15.setGeometry(QtCore.QRect(170, 20, 101, 101))
+        self.label_15.setStyleSheet("border: none; ")
         self.label_15.setObjectName("label_15")
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(MainWindow)
-        self.menubar.setGeometry(QtCore.QRect(0, 0, 419, 21))
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 459, 21))
         self.menubar.setObjectName("menubar")
         MainWindow.setMenuBar(self.menubar)
         self.statusbar = QtWidgets.QStatusBar(MainWindow)
@@ -90,13 +165,13 @@ class Ui_MainWindowi(object):
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
-        self.label_3.setText(_translate("MainWindow", "Capacidad:"))
-        self.label_7.setText(_translate("MainWindow", "Hora del cierre:"))
-        self.label_9.setText(_translate("MainWindow", "Hora de la apertura:"))
-        self.label.setText(_translate("MainWindow", "Dirección:"))
-        self.label_5.setText(_translate("MainWindow", "Usuarios actuales:"))
-        self.label_11.setText(_translate("MainWindow", "Tiempo máximo:"))
-        self.label_13.setText(_translate("MainWindow", "Ciudad:"))
+        self.label_3.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" font-weight:600;\">Capacidad</span></p></body></html>"))
+        self.label_7.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" font-size:10pt; font-weight:600;\">Hora del cierre</span></p></body></html>"))
+        self.label_9.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" font-weight:600;\">Hora de apertura</span></p></body></html>"))
+        self.label.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" font-weight:600;\">Dirección</span></p></body></html>"))
+        self.label_5.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" font-weight:600;\">Usuarios actuales</span></p></body></html>"))
+        self.label_11.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" font-size:10pt; font-weight:600;\">Tiempo máximo</span></p></body></html>"))
+        self.label_13.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" font-weight:600;\">Ciudad</span></p></body></html>"))
         self.label_15.setText(_translate("MainWindow", "<html><head/><body><p><img src=\":/Logo/Logo.png\" width=\"100\" height=\"100\"/></p></body></html>"))
 import Resources_rc
 

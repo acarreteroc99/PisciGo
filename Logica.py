@@ -4,8 +4,10 @@ from menuPreBooking import *
 from PreBusqueda import *
 from infoPiscina import *
 from booking import *
-import pymysql
-from datetime import datetime
+import pymysql, time
+from datetime import datetime, timedelta
+
+
 
 class book(QtWidgets.QMainWindow, Ui_MainWindowx):
 	def __init__(self, *args, **kwargs):
@@ -22,25 +24,72 @@ class book(QtWidgets.QMainWindow, Ui_MainWindowx):
 		fecha=self.calendar.selectedDate()
 		info=[fecha, self.timeEdit.time(), self.nPeopleSpinBox.value(), self.grater70SpinBox.value(), self.lower14SpinBox.value(), self.numPiscinas.text()]
 
-		cursor.execute("SELECT capacity, opening_hour, max_time FROM Pool WHERE idpool=%s", (info[-1]))
+		cursor.execute("SELECT capacity, opening_hour, max_time, closing_hour FROM Pool WHERE idpool=%s", (info[-1]))
 		data=cursor.fetchone()
-		print(data[1],type(data[1]),  datetime.strptime(info[1].toString(), "%H:%M:%S"))
-		#opening=QTime.fromString(str(opening_hour))
 
-		fechainicio=info[0].toString("MM/dd/yyyy")+" "+info[1].toString()
+		if data is None:
+			self.cajitaError.setText("ERROR: Ese codigo de piscina no existe")
+		else:
+			fechainicio=info[0].toString("MM/dd/yyyy")+" "+info[1].toString() #FECHA COMPLETA
+			fechainiciodatetime=datetime.strptime(fechainicio,"%m/%d/%Y %H:%M:%S")
+			delta=timedelta(hours=data[2])
 
-		if info[2]>0:
-			if info[3]>0 and info[4]>0:
-				self.cajitaError.setText("Reserva no realizada por seguridad entre edades")
-			else:
+			fechafinal=fechainiciodatetime+delta
+
+			t = datetime.strptime(info[1].toString(),"%H:%M:%S") #HORA QUE PIDE
+			tdelta=timedelta(hours=t.hour, minutes=t.minute, seconds=t.second)
+
+			if info[2]>0:
+				if info[3]>0 and info[4]>0:
+					self.cajitaError.setText("Reserva no realizada por seguridad entre edades")
+				else:
+					if timedelta(hours=t.hour, minutes=t.minute, seconds=t.second)<data[1] or timedelta(hours=t.hour, minutes=t.minute, seconds=t.second)>data[3]:
+						self.cajitaError.setText("Está fuera del horario")
+					else:
+						cursor.execute("SELECT SUM(nPeople), SUM(lower14), SUM(greater70) FROM Booking WHERE numPiscina=%s AND date=%s AND time BETWEEN %s and %s", (info[-1], info[0].toString("yyyy-MM-dd"), fechainiciodatetime.strftime("%H:%M:%S"), fechafinal.strftime("%H:%M:%S")))
+						totals=cursor.fetchone()
+						if totals[0] is not None:
+							print(totals)
+							totalppl=totals[0]
+							if info[2]>data[0]-totalppl:
+								self.cajitaError.setText("Reserva no realizada por insuficiencia de capacidad")
+							else:
+								if ((totals[1]>0 and info[3]>0) or (totals[2]>0 and info[4]>0)):
+									self.cajitaError.setText("Reserva no realizada por seguridad entre edades")
+								else:
+									if(info[3]+info[4]>info[2]):
+										self.cajitaError.setText("ERROR: Incoherencia en los números de personas")
+									else:
+										if cursor.execute("SELECT * FROM Booking WHERE user_name=%s AND date=%s", (uss.username, info[0].toString("yyyy-MM-dd"))):
+											self.cajitaError.setText("Ya tienes una reserva hecha para ese día")
+										else:
+											cursor.execute("INSERT INTO Booking VALUES (%s, %s, %s, %s, %s, %s, %s);", (uss.username, str(tdelta), str(info[2]), str(info[4]), str(info[3]), info[0].toString("yyyy-MM-dd"), str(info[5])))
+											self.cajitaError.setText("Reserva Realizada correctamente!!")
+											db.commit()
+											time.sleep(2)
+											self.close()
+						else:
+							if(info[3]+info[4]>info[2]):
+								self.cajitaError.setText("ERROR: Incoherencia en los números de personas")
+							else:
+								if cursor.execute("SELECT * FROM Booking WHERE user_name=%s AND date=%s", (uss.username, info[0].toString("yyyy-MM-dd"))):
+									self.cajitaError.setText("Ya tienes una reserva hecha para ese día")
+								else:
+									cursor.execute("INSERT INTO Booking VALUES (%s, %s, %s, %s, %s, %s, %s);", (uss.username, str(tdelta), str(info[2]), str(info[4]), str(info[3]), info[0].toString("yyyy-MM-dd"), str(info[5])))
+									self.cajitaError.setText("Reserva Realizada correctamente!!")
+									db.commit()
+									time.sleep(2)
+									self.close()
+
+
 				#cursor.execute("SELECT capacity FROM Pool WHERE idpool=%s", (info[-1]))
 				#data=cursor.fetchone()
 				#cursor.execute("SELECT lower14, greater70 FROM Booking WHERE date=")
-				pass
+				
+#Año-Mes-Dia
 
-
-		else: 
-			self.cajitaError.setText("No se ha escogido ninguna persona")
+			else: 
+				self.cajitaError.setText("No se ha escogido ninguna persona")
 
 class informacion(QtWidgets.QMainWindow, Ui_MainWindowi):
 	def __init__(self, *args, **kwargs):
@@ -113,6 +162,13 @@ class menuIntermedio(QtWidgets.QMainWindow, Ui_MainWindows):
 	def goPreBusqueda(self):
 		self.preBusqueda.show()
 
+class user():
+	def __init__(self):
+		self.username=''
+
+	def setUser(self, name):
+		self.username=name
+
 class MainWindow(QtWidgets.QMainWindow, Ui_mainWindow):
 	def __init__(self, *args, **kwargs):
 		QtWidgets.QMainWindow.__init__(self, *args, **kwargs)
@@ -128,6 +184,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_mainWindow):
 	def login(self):
 		if self.lineEdit.text() and self.passwordLineEdit.text():	
 			if cursor.execute("SELECT * FROM User WHERE user_name=%s AND password=%s", (self.lineEdit.text(), self.passwordLineEdit.text())):
+				uss.setUser(self.lineEdit.text())
 				self.label.setText("Log In Correcto")
 				self.intermedio.show()
 				self.close()
@@ -137,9 +194,9 @@ class MainWindow(QtWidgets.QMainWindow, Ui_mainWindow):
 			self.label.setText("Falta algún campo")
 
 
-
 if __name__ == "__main__":
 	db=pymysql.connect("sql7.freemysqlhosting.net","sql7352402","k3elt85NjB","sql7352402")
+	uss=user()
 	cursor=db.cursor()
 	app = QtWidgets.QApplication([])
 	window = MainWindow()

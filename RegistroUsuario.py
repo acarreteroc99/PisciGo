@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file '.\ui\RegistroUsuario.ui'
+# Form implementation generated from reading ui file '.\ui\RegistroUsuario_color.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.0
 #
@@ -15,6 +15,8 @@ class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
         MainWindow.resize(589, 643)
+        MainWindow.setStyleSheet("background-color: \"#60ACE9\";\n"
+"")
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.formLayoutWidget = QtWidgets.QWidget(self.centralwidget)
@@ -25,56 +27,85 @@ class Ui_MainWindow(object):
         self.formLayout.setContentsMargins(0, 0, 0, 0)
         self.formLayout.setObjectName("formLayout")
         self.usuarioLabel = QtWidgets.QLabel(self.formLayoutWidget)
+        self.usuarioLabel.setStyleSheet("color: white; \n"
+"font: 75 10pt \"Candara\";\n"
+"")
         self.usuarioLabel.setAlignment(QtCore.Qt.AlignCenter)
         self.usuarioLabel.setObjectName("usuarioLabel")
         self.formLayout.setWidget(0, QtWidgets.QFormLayout.FieldRole, self.usuarioLabel)
         self.usuarioLineEdit = QtWidgets.QLineEdit(self.formLayoutWidget)
+        self.usuarioLineEdit.setStyleSheet("border-radius: 4px; \n"
+"border: 2px solid \"#E0E0E0\";")
         self.usuarioLineEdit.setText("")
         self.usuarioLineEdit.setAlignment(QtCore.Qt.AlignCenter)
         self.usuarioLineEdit.setObjectName("usuarioLineEdit")
         self.formLayout.setWidget(1, QtWidgets.QFormLayout.FieldRole, self.usuarioLineEdit)
         self.correoElectronicoLabel = QtWidgets.QLabel(self.formLayoutWidget)
+        self.correoElectronicoLabel.setStyleSheet("color: white; \n"
+"font: 75 10pt \"Candara\";")
         self.correoElectronicoLabel.setAlignment(QtCore.Qt.AlignCenter)
         self.correoElectronicoLabel.setObjectName("correoElectronicoLabel")
         self.formLayout.setWidget(2, QtWidgets.QFormLayout.FieldRole, self.correoElectronicoLabel)
         self.correoElectronicoLineEdit = QtWidgets.QLineEdit(self.formLayoutWidget)
+        self.correoElectronicoLineEdit.setStyleSheet("border-radius: 4px; \n"
+"border: 2px solid \"#E0E0E0\";")
         self.correoElectronicoLineEdit.setAlignment(QtCore.Qt.AlignCenter)
         self.correoElectronicoLineEdit.setObjectName("correoElectronicoLineEdit")
         self.formLayout.setWidget(3, QtWidgets.QFormLayout.FieldRole, self.correoElectronicoLineEdit)
         self.numContactLabel = QtWidgets.QLabel(self.formLayoutWidget)
+        self.numContactLabel.setStyleSheet("color: white; \n"
+"font: 75 10pt \"Candara\";")
         self.numContactLabel.setAlignment(QtCore.Qt.AlignCenter)
         self.numContactLabel.setObjectName("numContactLabel")
         self.formLayout.setWidget(4, QtWidgets.QFormLayout.FieldRole, self.numContactLabel)
         self.numContactLineEdit = QtWidgets.QLineEdit(self.formLayoutWidget)
+        self.numContactLineEdit.setStyleSheet("border-radius: 4px; \n"
+"border: 2px solid \"#E0E0E0\";")
         self.numContactLineEdit.setAlignment(QtCore.Qt.AlignCenter)
         self.numContactLineEdit.setObjectName("numContactLineEdit")
         self.formLayout.setWidget(5, QtWidgets.QFormLayout.FieldRole, self.numContactLineEdit)
         self.contrasenaLabel = QtWidgets.QLabel(self.formLayoutWidget)
+        self.contrasenaLabel.setStyleSheet("color: white; \n"
+"font: 75 10pt \"Candara\";")
         self.contrasenaLabel.setAlignment(QtCore.Qt.AlignCenter)
         self.contrasenaLabel.setObjectName("contrasenaLabel")
         self.formLayout.setWidget(6, QtWidgets.QFormLayout.FieldRole, self.contrasenaLabel)
         self.contrasenaLineEdit = QtWidgets.QLineEdit(self.formLayoutWidget)
+        self.contrasenaLineEdit.setStyleSheet("border-radius: 4px; \n"
+"border: 2px solid \"#E0E0E0\";")
         self.contrasenaLineEdit.setText("")
         self.contrasenaLineEdit.setEchoMode(QtWidgets.QLineEdit.Password)
         self.contrasenaLineEdit.setAlignment(QtCore.Qt.AlignCenter)
         self.contrasenaLineEdit.setObjectName("contrasenaLineEdit")
         self.formLayout.setWidget(7, QtWidgets.QFormLayout.FieldRole, self.contrasenaLineEdit)
         self.confContrasenaLabel = QtWidgets.QLabel(self.formLayoutWidget)
+        self.confContrasenaLabel.setStyleSheet("color: white; \n"
+"font: 75 10pt \"Candara\";")
         self.confContrasenaLabel.setAlignment(QtCore.Qt.AlignCenter)
         self.confContrasenaLabel.setObjectName("confContrasenaLabel")
         self.formLayout.setWidget(8, QtWidgets.QFormLayout.FieldRole, self.confContrasenaLabel)
         self.confContrasenaLineEdit = QtWidgets.QLineEdit(self.formLayoutWidget)
+        self.confContrasenaLineEdit.setStyleSheet("border-radius: 4px; \n"
+"border: 2px solid \"#E0E0E0\";")
         self.confContrasenaLineEdit.setText("")
         self.confContrasenaLineEdit.setEchoMode(QtWidgets.QLineEdit.Password)
         self.confContrasenaLineEdit.setAlignment(QtCore.Qt.AlignCenter)
         self.confContrasenaLineEdit.setObjectName("confContrasenaLineEdit")
         self.formLayout.setWidget(9, QtWidgets.QFormLayout.FieldRole, self.confContrasenaLineEdit)
         self.buttonBox = QtWidgets.QDialogButtonBox(self.centralwidget)
-        self.buttonBox.setGeometry(QtCore.QRect(200, 410, 156, 23))
+        self.buttonBox.setGeometry(QtCore.QRect(190, 430, 156, 23))
+        self.buttonBox.setStyleSheet("border-radius: 2px; \n"
+"background-color: \"#E0E0E0\";\n"
+"color: black; \n"
+"padding: 0px 20px 0px 20px; ")
         self.buttonBox.setStandardButtons(QtWidgets.QDialogButtonBox.Cancel|QtWidgets.QDialogButtonBox.Ok)
         self.buttonBox.setObjectName("buttonBox")
         self.textEdit = QtWidgets.QTextEdit(self.centralwidget)
         self.textEdit.setGeometry(QtCore.QRect(190, 50, 171, 61))
+        self.textEdit.setStyleSheet("color: white; \n"
+"font: 75 10pt \"Candara\";\n"
+"border-radius: 5px; \n"
+"border: 1px solid \"#E0E0E0\";")
         self.textEdit.setObjectName("textEdit")
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(MainWindow)
@@ -91,16 +122,16 @@ class Ui_MainWindow(object):
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
-        self.usuarioLabel.setText(_translate("MainWindow", "Usuario"))
-        self.correoElectronicoLabel.setText(_translate("MainWindow", "Correo Electrónico"))
-        self.numContactLabel.setText(_translate("MainWindow", "Número de contacto"))
-        self.contrasenaLabel.setText(_translate("MainWindow", "Contraseña"))
-        self.confContrasenaLabel.setText(_translate("MainWindow", "Confirmar contraseña"))
+        self.usuarioLabel.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" font-weight:600;\">Usuario</span></p></body></html>"))
+        self.correoElectronicoLabel.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" font-weight:600;\">Correo Electrónico</span></p></body></html>"))
+        self.numContactLabel.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" font-weight:600;\">Número de contacto</span></p></body></html>"))
+        self.contrasenaLabel.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" font-weight:600;\">Contraseña</span></p></body></html>"))
+        self.confContrasenaLabel.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" font-weight:600;\">Confirmar contraseña</span></p></body></html>"))
         self.textEdit.setHtml(_translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:\'MS Shell Dlg 2\'; font-size:8.25pt; font-weight:400; font-style:normal;\">\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt; font-weight:600;\">Registro de Usuario</span></p></body></html>"))
+"</style></head><body style=\" font-family:\'Candara\'; font-size:10pt; font-weight:72; font-style:normal;\">\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'MS Shell Dlg 2\'; font-size:14pt; font-weight:600;\">Registro de Usuario</span></p></body></html>"))
 
 
 if __name__ == "__main__":
