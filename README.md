@@ -1,8 +1,8 @@
 ![Logo](https://github.com/comprometidosporelfuturo/equipo4/blob/master/Others/Logo.png)
 
 # PisciGO
-[Andreu Carreño Mateu](https://github.com/andreuCM11)
-[Adrián Carretero Canut](https://github.com/acarreteroc99)
+[Andreu Carreño Mateu](https://github.com/andreuCM11) \
+[Adrián Carretero Canut](https://github.com/acarreteroc99) \
 [Jonathan Sánchez Santiago](https://github.com/jonxir)
 
 
