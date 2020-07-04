@@ -1,9 +1,9 @@
-<img src="https://imgur.com/A4MnswR" alt="PisciGO Logo" width="100"/>
+![Logo](https://github.com/comprometidosporelfuturo/equipo4/blob/master/Others/Logo.png)
 
 # PisciGO
-*[Andreu Carreño Mateu]*
-*[Adrián Carretero Canut]*
-*[Jonathan Sánchez Santiago]*
+[Andreu Carreño Mateu](https://github.com/andreuCM11)
+[Adrián Carretero Canut](https://github.com/acarreteroc99)
+[Jonathan Sánchez Santiago](https://github.com/jonxir)
 
 
 ## Content
