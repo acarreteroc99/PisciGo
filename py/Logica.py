@@ -1,10 +1,10 @@
-from PantallaInicial import *
-from RegistroUsuario import *
-from menuPreBooking import *
-from PreBusqueda import *
-from infoPiscina import *
-from booking import *
-from cancelarReserva import *
+from py.PantallaInicial import *
+from py.RegistroUsuario import *
+from py.menuPreBooking import *
+from py.PreBusqueda import *
+from py.infoPiscina import *
+from py.booking import *
+from py.cancelarReserva import *
 import pymysql, time
 from datetime import datetime, timedelta
 

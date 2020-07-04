@@ -126,7 +126,6 @@ class Ui_mainWindow(object):
         self.passwordLabel.setText(_translate("mainWindow", "<html><head/><body><p><span style=\" font-weight:600;\">Password</span></p></body></html>"))
         self.pushButton.setText(_translate("mainWindow", "Log In"))
         self.pushButton_2.setText(_translate("mainWindow", "Register"))
-import Resources_rc
 
 
 if __name__ == "__main__":
