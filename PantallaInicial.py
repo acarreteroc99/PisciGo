@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file '.\ui\PantallaInicial.ui'
+# Form implementation generated from reading ui file '.\ui\PantallaInicial_color.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.0
 #
@@ -15,50 +15,102 @@ class Ui_mainWindow(object):
     def setupUi(self, mainWindow):
         mainWindow.setObjectName("mainWindow")
         mainWindow.resize(728, 822)
+        mainWindow.setStyleSheet("background-color: \"#60ACE9\";")
         self.centralwidget = QtWidgets.QWidget(mainWindow)
         self.centralwidget.setObjectName("centralwidget")
-        self.formLayoutWidget = QtWidgets.QWidget(self.centralwidget)
-        self.formLayoutWidget.setGeometry(QtCore.QRect(130, 240, 471, 71))
-        self.formLayoutWidget.setObjectName("formLayoutWidget")
-        self.formLayout = QtWidgets.QFormLayout(self.formLayoutWidget)
+        self.formWidget = QtWidgets.QWidget(self.centralwidget)
+        self.formWidget.setGeometry(QtCore.QRect(110, 100, 501, 541))
+        self.formWidget.setStyleSheet("border-radius: 15px; \n"
+"background-color: \"#60ACE9\"; \n"
+"border: 1px solid white; \n"
+"border: none;")
+        self.formWidget.setObjectName("formWidget")
+        self.formLayout = QtWidgets.QFormLayout(self.formWidget)
+        self.formLayout.setFormAlignment(QtCore.Qt.AlignCenter)
         self.formLayout.setContentsMargins(0, 0, 0, 0)
         self.formLayout.setObjectName("formLayout")
-        self.label_2 = QtWidgets.QLabel(self.formLayoutWidget)
+        self.label_4 = QtWidgets.QLabel(self.formWidget)
+        self.label_4.setStyleSheet("border: none; \n"
+"padding-bottom: 30px; ")
+        self.label_4.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_4.setObjectName("label_4")
+        self.formLayout.setWidget(1, QtWidgets.QFormLayout.FieldRole, self.label_4)
+        self.label_2 = QtWidgets.QLabel(self.formWidget)
+        self.label_2.setStyleSheet("border-radius: 5px; \n"
+"color: white; \n"
+"font: 12pt \"Myanmar Text\";\n"
+"margin: 20px 150px 0px 150px; \n"
+"border: none; ")
         self.label_2.setAlignment(QtCore.Qt.AlignCenter)
         self.label_2.setObjectName("label_2")
-        self.formLayout.setWidget(2, QtWidgets.QFormLayout.LabelRole, self.label_2)
-        self.lineEdit = QtWidgets.QLineEdit(self.formLayoutWidget)
+        self.formLayout.setWidget(4, QtWidgets.QFormLayout.FieldRole, self.label_2)
+        self.lineEdit = QtWidgets.QLineEdit(self.formWidget)
+        self.lineEdit.setStyleSheet("border-radius: 5px; \n"
+"background-color: white; \n"
+"border: 1px solid white; \n"
+"margin: 0px 80px 0px 80px; \n"
+"padding: 10px;")
+        self.lineEdit.setAlignment(QtCore.Qt.AlignCenter)
         self.lineEdit.setObjectName("lineEdit")
-        self.formLayout.setWidget(2, QtWidgets.QFormLayout.FieldRole, self.lineEdit)
-        self.passwordLabel = QtWidgets.QLabel(self.formLayoutWidget)
+        self.formLayout.setWidget(5, QtWidgets.QFormLayout.FieldRole, self.lineEdit)
+        self.passwordLabel = QtWidgets.QLabel(self.formWidget)
+        font = QtGui.QFont()
+        font.setFamily("Myanmar Text")
+        font.setPointSize(12)
+        font.setBold(False)
+        font.setItalic(False)
+        font.setWeight(50)
+        self.passwordLabel.setFont(font)
+        self.passwordLabel.setStyleSheet("border-radius: 5px; \n"
+"color: white; \n"
+"font: 12pt \"Myanmar Text\";\n"
+"margin: 0px 150px 0px 150px; \n"
+"border: none; \n"
+"")
+        self.passwordLabel.setAlignment(QtCore.Qt.AlignCenter)
         self.passwordLabel.setObjectName("passwordLabel")
-        self.formLayout.setWidget(3, QtWidgets.QFormLayout.LabelRole, self.passwordLabel)
-        self.passwordLineEdit = QtWidgets.QLineEdit(self.formLayoutWidget)
+        self.formLayout.setWidget(6, QtWidgets.QFormLayout.FieldRole, self.passwordLabel)
+        self.passwordLineEdit = QtWidgets.QLineEdit(self.formWidget)
+        self.passwordLineEdit.setStyleSheet("border-radius: 5px; \n"
+"background-color: white; \n"
+"border: 1px solid white; \n"
+"margin: 0px 80px 0px 80px; \n"
+"padding: 10px;")
         self.passwordLineEdit.setEchoMode(QtWidgets.QLineEdit.Password)
+        self.passwordLineEdit.setAlignment(QtCore.Qt.AlignCenter)
         self.passwordLineEdit.setObjectName("passwordLineEdit")
-        self.formLayout.setWidget(3, QtWidgets.QFormLayout.FieldRole, self.passwordLineEdit)
-        self.pushButton = QtWidgets.QPushButton(self.centralwidget)
-        self.pushButton.setGeometry(QtCore.QRect(280, 320, 75, 23))
+        self.formLayout.setWidget(7, QtWidgets.QFormLayout.FieldRole, self.passwordLineEdit)
+        self.gridWidget = QtWidgets.QWidget(self.formWidget)
+        font = QtGui.QFont()
+        font.setFamily("Candara")
+        self.gridWidget.setFont(font)
+        self.gridWidget.setStyleSheet("margin: 10px 80px 10px 80px;\n"
+"border: none; ")
+        self.gridWidget.setObjectName("gridWidget")
+        self.gridLayout = QtWidgets.QGridLayout(self.gridWidget)
+        self.gridLayout.setObjectName("gridLayout")
+        self.pushButton = QtWidgets.QPushButton(self.gridWidget)
+        self.pushButton.setStyleSheet("border-radius: 5px; \n"
+"background-color: \"#E0E0E0\"; \n"
+"border: 1px solid grey; ")
         self.pushButton.setObjectName("pushButton")
-        self.pushButton_2 = QtWidgets.QPushButton(self.centralwidget)
-        self.pushButton_2.setGeometry(QtCore.QRect(370, 320, 75, 23))
+        self.gridLayout.addWidget(self.pushButton, 0, 0, 1, 1)
+        self.pushButton_2 = QtWidgets.QPushButton(self.gridWidget)
+        self.pushButton_2.setStyleSheet("border-radius: 5px; \n"
+"background-color: \"#E0E0E0\"; \n"
+"border: 1px solid grey; \n"
+"")
         self.pushButton_2.setObjectName("pushButton_2")
-        self.label_3 = QtWidgets.QLabel(self.centralwidget)
-        self.label_3.setGeometry(QtCore.QRect(120, 370, 501, 371))
-        self.label_3.setObjectName("label_3")
-        self.label_4 = QtWidgets.QLabel(self.centralwidget)
-        self.label_4.setGeometry(QtCore.QRect(260, 30, 201, 201))
-        self.label_4.setObjectName("label_4")
-        self.label = QtWidgets.QLabel(self.centralwidget)
-        self.label.setGeometry(QtCore.QRect(300, 300, 121, 16))
+        self.gridLayout.addWidget(self.pushButton_2, 0, 1, 1, 1)
+        self.formLayout.setWidget(8, QtWidgets.QFormLayout.FieldRole, self.gridWidget)
+        self.label = QtWidgets.QLabel(self.formWidget)
+        self.label.setStyleSheet("text: white; \n"
+"font: 8pt \"Myanmar Text\";")
         self.label.setText("")
         self.label.setAlignment(QtCore.Qt.AlignCenter)
         self.label.setObjectName("label")
+        self.formLayout.setWidget(3, QtWidgets.QFormLayout.FieldRole, self.label)
         mainWindow.setCentralWidget(self.centralwidget)
-        self.menubar = QtWidgets.QMenuBar(mainWindow)
-        self.menubar.setGeometry(QtCore.QRect(0, 0, 728, 21))
-        self.menubar.setObjectName("menubar")
-        mainWindow.setMenuBar(self.menubar)
         self.statusbar = QtWidgets.QStatusBar(mainWindow)
         self.statusbar.setObjectName("statusbar")
         mainWindow.setStatusBar(self.statusbar)
@@ -69,12 +121,11 @@ class Ui_mainWindow(object):
     def retranslateUi(self, mainWindow):
         _translate = QtCore.QCoreApplication.translate
         mainWindow.setWindowTitle(_translate("mainWindow", "MainWindow"))
-        self.label_2.setText(_translate("mainWindow", "Usuario:"))
-        self.passwordLabel.setText(_translate("mainWindow", "Password:"))
+        self.label_4.setText(_translate("mainWindow", "<html><head/><body><p><img src=\":/Logo/Logo.png\" width=\"200\" height=\"200\"/></p></body></html>"))
+        self.label_2.setText(_translate("mainWindow", "<html><head/><body><p><span style=\" font-weight:600;\">Usuario</span></p></body></html>"))
+        self.passwordLabel.setText(_translate("mainWindow", "<html><head/><body><p><span style=\" font-weight:600;\">Password</span></p></body></html>"))
         self.pushButton.setText(_translate("mainWindow", "Log In"))
         self.pushButton_2.setText(_translate("mainWindow", "Register"))
-        self.label_3.setText(_translate("mainWindow", "<html><head/><body><p><img src=\":/Piscina/piscinacomunitaria.jpg\"/></p></body></html>"))
-        self.label_4.setText(_translate("mainWindow", "<html><head/><body><p><img src=\":/Logo/Logo.png\" width=\"200\" height=\"200\"/></p></body></html>"))
 import Resources_rc
 
 

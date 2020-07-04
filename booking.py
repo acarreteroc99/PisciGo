@@ -18,9 +18,7 @@ class Ui_MainWindowx(object):
         font = QtGui.QFont()
         font.setFamily("Myanmar Text")
         MainWindow.setFont(font)
-        MainWindow.setStyleSheet("QWidget {\n"
-"border: 10px black solid;\n"
-"}")
+        MainWindow.setStyleSheet("background-color: \"#60ACE0\"")
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.calendar = QtWidgets.QCalendarWidget(self.centralwidget)
@@ -29,13 +27,14 @@ class Ui_MainWindowx(object):
 "background-color: \"#60ACE9\";")
         self.calendar.setObjectName("calendar")
         self.gridWidget = QtWidgets.QWidget(self.centralwidget)
-        self.gridWidget.setGeometry(QtCore.QRect(140, 320, 331, 191))
+        self.gridWidget.setGeometry(QtCore.QRect(140, 320, 331, 241))
         self.gridWidget.setStyleSheet("border: 1px solid white;\n"
+"border radius: 5px;\n"
 "padding: 10px;\n"
 "padding-left: 20px;\n"
 "color: white; \n"
 "font-weight: bolder; \n"
-"background-color: \"#60ACE9\";")
+"background-color:\"#329CE3\";")
         self.gridWidget.setObjectName("gridWidget")
         self.gridLayout = QtWidgets.QGridLayout(self.gridWidget)
         self.gridLayout.setContentsMargins(0, 0, 0, 0)
@@ -53,68 +52,80 @@ class Ui_MainWindowx(object):
 "")
         self.nPeople.setObjectName("nPeople")
         self.gridLayout.addWidget(self.nPeople, 2, 0, 1, 1)
-        self.lower14SpinBox = QtWidgets.QSpinBox(self.gridWidget)
-        self.lower14SpinBox.setStyleSheet("font: 8pt \"Myanmar Text\";\n"
-"border-radius: 5px;\n"
+        self.numPiscinasLabel = QtWidgets.QLabel(self.gridWidget)
+        self.numPiscinasLabel.setStyleSheet("border: none; ")
+        self.numPiscinasLabel.setObjectName("numPiscinasLabel")
+        self.gridLayout.addWidget(self.numPiscinasLabel, 5, 0, 1, 1)
+        self.entryHour = QtWidgets.QLabel(self.gridWidget)
+        self.entryHour.setStyleSheet("\n"
+"font: 9pt \"Candara\";\n"
 "border: none;\n"
-"background-color: \"#60ACE9\";\n"
 "")
-        self.lower14SpinBox.setObjectName("lower14SpinBox")
-        self.gridLayout.addWidget(self.lower14SpinBox, 4, 1, 1, 1)
+        self.entryHour.setObjectName("entryHour")
+        self.gridLayout.addWidget(self.entryHour, 1, 0, 1, 1)
+        self.numPiscinas = QtWidgets.QLineEdit(self.gridWidget)
+        self.numPiscinas.setStyleSheet("border-radius: 5px; \n"
+"color: white; ")
+        self.numPiscinas.setObjectName("numPiscinas")
+        self.gridLayout.addWidget(self.numPiscinas, 5, 1, 1, 1)
         self.nPeopleSpinBox = QtWidgets.QSpinBox(self.gridWidget)
         self.nPeopleSpinBox.setStyleSheet("font: 8pt \"Myanmar Text\";\n"
 "border: none;\n"
 "border-radius: 5px;\n"
-"background-color: \"#60ACE9\";")
+"background-color: \"#329CE3\";")
         self.nPeopleSpinBox.setObjectName("nPeopleSpinBox")
         self.gridLayout.addWidget(self.nPeopleSpinBox, 2, 1, 1, 1)
-        self.grater70SpinBox = QtWidgets.QSpinBox(self.gridWidget)
-        self.grater70SpinBox.setStyleSheet("font: 8pt \"Myanmar Text\";\n"
-"border: none;\n"
-"border-radius:  5px;\n"
-"background-color: \"#60ACE9\";\n"
-"font-weight: bolder; ")
-        self.grater70SpinBox.setObjectName("grater70SpinBox")
-        self.gridLayout.addWidget(self.grater70SpinBox, 3, 1, 1, 1)
         self.lower14 = QtWidgets.QLabel(self.gridWidget)
         self.lower14.setStyleSheet("font: 9pt \"Candara\";\n"
 "border: none; ")
         self.lower14.setObjectName("lower14")
         self.gridLayout.addWidget(self.lower14, 4, 0, 1, 1)
-        self.entryHour = QtWidgets.QLabel(self.gridWidget)
-        self.entryHour.setStyleSheet("\n"
-"font: 9pt \"Candara\";\n"
-"border-style: \"solid\";\n"
-"")
-        self.entryHour.setObjectName("entryHour")
-        self.gridLayout.addWidget(self.entryHour, 0, 0, 1, 1)
-        self.dateEdit = QtWidgets.QDateEdit(self.gridWidget)
-        self.dateEdit.setStyleSheet("font: 8pt \"Myannara\";\n"
-"border: none; \n"
-"background-color: \"#60ACE9\";")
-        self.dateEdit.setObjectName("dateEdit")
-        self.gridLayout.addWidget(self.dateEdit, 0, 1, 1, 1)
-        self.label = QtWidgets.QLabel(self.gridWidget)
-        self.label.setStyleSheet("\n"
-"font: 9pt \"Candara\";\n"
-"border: none;\n"
-"")
-        self.label.setObjectName("label")
-        self.gridLayout.addWidget(self.label, 1, 0, 1, 1)
         self.timeEdit = QtWidgets.QTimeEdit(self.gridWidget)
         self.timeEdit.setStyleSheet("font: 8pt \"Myanmar Text\";\n"
 "border-radius: 10px;\n"
 "border: none;\n"
-"background-color: \"#60ACE9\";")
+"background-color: \"#329CE3\";")
         self.timeEdit.setObjectName("timeEdit")
         self.gridLayout.addWidget(self.timeEdit, 1, 1, 1, 1)
+        self.lower14SpinBox = QtWidgets.QSpinBox(self.gridWidget)
+        self.lower14SpinBox.setStyleSheet("font: 8pt \"Myanmar Text\";\n"
+"border-radius: 5px;\n"
+"border: none;\n"
+"background-color: \"#329CE3\";\n"
+"")
+        self.lower14SpinBox.setObjectName("lower14SpinBox")
+        self.gridLayout.addWidget(self.lower14SpinBox, 4, 1, 1, 1)
+        self.grater70SpinBox = QtWidgets.QSpinBox(self.gridWidget)
+        self.grater70SpinBox.setStyleSheet("font: 8pt \"Myanmar Text\";\n"
+"border: none;\n"
+"border-radius:  5px;\n"
+"background-color: \"#329CE3\";\n"
+"font-weight: bolder; ")
+        self.grater70SpinBox.setObjectName("grater70SpinBox")
+        self.gridLayout.addWidget(self.grater70SpinBox, 3, 1, 1, 1)
+        self.cajitaError = QtWidgets.QLineEdit(self.gridWidget)
+        self.cajitaError.setStyleSheet("border: none; ")
+        self.cajitaError.setObjectName("cajitaError")
+        self.gridLayout.addWidget(self.cajitaError, 0, 0, 1, 2)
         self.frame = QtWidgets.QFrame(self.centralwidget)
-        self.frame.setGeometry(QtCore.QRect(130, 90, 351, 451))
-        self.frame.setStyleSheet("background-color: \"#329CE3\";\n"
+        self.frame.setGeometry(QtCore.QRect(130, 90, 351, 541))
+        self.frame.setStyleSheet("background-color: \"#60ACE9\";\n"
 "border-radius: 5px; ")
         self.frame.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.frame.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame.setObjectName("frame")
+        self.reservar = QtWidgets.QPushButton(self.frame)
+        self.reservar.setGeometry(QtCore.QRect(100, 490, 75, 23))
+        self.reservar.setStyleSheet("color: black; \n"
+"border: 1px solid white; \n"
+"background-color: white; ")
+        self.reservar.setObjectName("reservar")
+        self.atras = QtWidgets.QPushButton(self.frame)
+        self.atras.setGeometry(QtCore.QRect(190, 490, 75, 23))
+        self.atras.setStyleSheet("color: black; \n"
+"border: 1px solid white; \n"
+"background-color: white; ")
+        self.atras.setObjectName("atras")
         self.frame.raise_()
         self.calendar.raise_()
         self.gridWidget.raise_()
@@ -134,9 +145,11 @@ class Ui_MainWindowx(object):
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
         self.greater70.setText(_translate("MainWindow", "Mayores de 70"))
         self.nPeople.setText(_translate("MainWindow", "Personas"))
+        self.numPiscinasLabel.setText(_translate("MainWindow", "Número Piscina"))
+        self.entryHour.setText(_translate("MainWindow", "Hora de entrada"))
         self.lower14.setText(_translate("MainWindow", "Menores de 14"))
-        self.entryHour.setText(_translate("MainWindow", "Fecha de la reserva"))
-        self.label.setText(_translate("MainWindow", "Hora de entrada"))
+        self.reservar.setText(_translate("MainWindow", "Reservar"))
+        self.atras.setText(_translate("MainWindow", "Atrás"))
         self.toolBar.setWindowTitle(_translate("MainWindow", "toolBar"))
 
 

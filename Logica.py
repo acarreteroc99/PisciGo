@@ -5,11 +5,42 @@ from PreBusqueda import *
 from infoPiscina import *
 from booking import *
 import pymysql
+from datetime import datetime
 
 class book(QtWidgets.QMainWindow, Ui_MainWindowx):
 	def __init__(self, *args, **kwargs):
 		QtWidgets.QMainWindow.__init__(self, *args, **kwargs)
 		self.setupUi(self)
+		self.reservar.clicked.connect(self.reserva)
+		self.atras.clicked.connect(self.back)
+
+	def back(self):
+		self.close()
+
+	def reserva(self):
+
+		fecha=self.calendar.selectedDate()
+		info=[fecha, self.timeEdit.time(), self.nPeopleSpinBox.value(), self.grater70SpinBox.value(), self.lower14SpinBox.value(), self.numPiscinas.text()]
+
+		cursor.execute("SELECT capacity, opening_hour, max_time FROM Pool WHERE idpool=%s", (info[-1]))
+		data=cursor.fetchone()
+		print(data[1],type(data[1]),  datetime.strptime(info[1].toString(), "%H:%M:%S"))
+		#opening=QTime.fromString(str(opening_hour))
+
+		fechainicio=info[0].toString("MM/dd/yyyy")+" "+info[1].toString()
+
+		if info[2]>0:
+			if info[3]>0 and info[4]>0:
+				self.cajitaError.setText("Reserva no realizada por seguridad entre edades")
+			else:
+				#cursor.execute("SELECT capacity FROM Pool WHERE idpool=%s", (info[-1]))
+				#data=cursor.fetchone()
+				#cursor.execute("SELECT lower14, greater70 FROM Booking WHERE date=")
+				pass
+
+
+		else: 
+			self.cajitaError.setText("No se ha escogido ninguna persona")
 
 class informacion(QtWidgets.QMainWindow, Ui_MainWindowi):
 	def __init__(self, *args, **kwargs):
@@ -72,7 +103,12 @@ class menuIntermedio(QtWidgets.QMainWindow, Ui_MainWindows):
 		QtWidgets.QMainWindow.__init__(self, *args, **kwargs)
 		self.setupUi(self)
 		self.preBusqueda=preBusqueda()
+		self.booking=book()
 		self.commandLinkButton.clicked.connect(self.goPreBusqueda)
+		self.commandLinkButton_2.clicked.connect(self.gobook)
+
+	def gobook(self):
+		self.booking.show()
 
 	def goPreBusqueda(self):
 		self.preBusqueda.show()
