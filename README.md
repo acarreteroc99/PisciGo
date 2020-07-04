@@ -53,6 +53,6 @@ En el repositorio puedes encontrar:
 ## Links
 
 [Repository](https://github.com/comprometidosporelfuturo/equipo4)  
-[Slides](https://docs.google.com/presentation/d/1SYobI8pTTekKPECIG84-9INWj7PrG2xXutOTHXiTiII/edit#slide=id.g8079223f8a_0_37228)  
+[Slides](https://docs.google.com/presentation/d/1q-Ol8tuVkrT6mBZz4IpSKy5Tlvq7Snx_sTv-8m0tjAk/edit?ts=5f00a1ed#slide=id.g8ba0d4abd1_0_0)  
 [Trello](https://trello.com/b/FWFdPJ0H/hackathon-equipo-4-piscigo)  
 [Modelo de negocio](https://docs.google.com/presentation/d/11uKw0O6_9FgidDC-1gPnMxbcq1KGC5IOKI82Grn2Xt0/edit?ts=5f007ed4)
