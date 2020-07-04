@@ -1,8 +1,39 @@
 from PantallaInicial import *
 from RegistroUsuario import *
 from menuPreBooking import *
+from PreBusqueda import *
+from infoPiscina import *
 import pymysql
 
+class informacion(QtWidgets.QMainWindow, Ui_MainWindowi):
+	def __init__(self, *args, **kwargs):
+		QtWidgets.QMainWindow.__init__(self, *args, **kwargs)
+		self.setupUi(self)		
+
+
+class preBusqueda(QtWidgets.QMainWindow, Ui_MainWindowe):
+	def __init__(self, *args, **kwargs):
+		QtWidgets.QMainWindow.__init__(self, *args, **kwargs)
+		self.setupUi(self)
+		self.infoPiscina=informacion()
+		self.buttonBox.rejected.connect(self.cancel)
+		self.buttonBox.accepted.connect(self.accept)
+
+	def accept(self):
+		if self.lineEdit.text() and cursor.execute("SELECT * FROM Pool WHERE idpool=%s", (self.lineEdit.text())):
+			cursor.execute("SELECT * FROM Pool WHERE idpool=%s", (self.lineEdit.text()))
+			data=cursor.fetchone()
+			self.infoPiscina.label_14.setText(data[8])
+			self.infoPiscina.label_2.setText(data[0])
+			self.infoPiscina.label_4.setText(str(data[3]))
+			self.infoPiscina.label_6.setText(str(data[5]))
+			self.infoPiscina.label_8.setText(str(data[6]))
+			self.infoPiscina.label_10.setText(str(data[10]))
+			self.infoPiscina.label_12.setText(str(data[9]))
+			self.infoPiscina.show()
+
+	def cancel(self):
+		self.close()
 
 
 class RegisterWindow(QtWidgets.QMainWindow, Ui_MainWindow):
@@ -32,6 +63,11 @@ class menuIntermedio(QtWidgets.QMainWindow, Ui_MainWindows):
 	def __init__(self, *args, **kwargs):
 		QtWidgets.QMainWindow.__init__(self, *args, **kwargs)
 		self.setupUi(self)
+		self.preBusqueda=preBusqueda()
+		self.commandLinkButton.clicked.connect(self.goPreBusqueda)
+
+	def goPreBusqueda(self):
+		self.preBusqueda.show()
 
 class MainWindow(QtWidgets.QMainWindow, Ui_mainWindow):
 	def __init__(self, *args, **kwargs):
