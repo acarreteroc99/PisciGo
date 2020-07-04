@@ -13,6 +13,9 @@
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: &quot;#60ACE9&quot;;</string>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QWidget" name="verticalLayoutWidget">
     <property name="geometry">
@@ -26,6 +29,12 @@
     <layout class="QVBoxLayout" name="verticalLayout">
      <item>
       <widget class="QCommandLinkButton" name="commandLinkButton">
+       <property name="styleSheet">
+        <string notr="true">font: 11pt &quot;Candara&quot;;
+border: 2px solid white; 
+border-radius: 10px;
+color: white; </string>
+       </property>
        <property name="text">
         <string>Consultar información sobre una piscina</string>
        </property>
@@ -45,6 +54,12 @@
     <layout class="QVBoxLayout" name="verticalLayout_2">
      <item>
       <widget class="QCommandLinkButton" name="commandLinkButton_2">
+       <property name="styleSheet">
+        <string notr="true">font: 11pt &quot;Candara&quot;;
+border: 2px solid white; 
+border-radius: 10px; 
+color: white; </string>
+       </property>
        <property name="text">
         <string>Realizar reserva</string>
        </property>
