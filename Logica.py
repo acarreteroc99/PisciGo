@@ -4,10 +4,34 @@ from menuPreBooking import *
 from PreBusqueda import *
 from infoPiscina import *
 from booking import *
+from cancelarReserva import *
 import pymysql, time
 from datetime import datetime, timedelta
 
+class cancel(QtWidgets.QMainWindow, Ui_MainWindoww):
+	def __init__(self, *args, **kwargs):
+		QtWidgets.QMainWindow.__init__(self, *args, **kwargs)
+		self.setupUi(self)
+		self.buttonBox.rejected.connect(self.cancel)
+		self.buttonBox.accepted.connect(self.accept)
 
+
+	def accept(self):
+		fecha=self.dateEdit.date()
+		if self.numContactLineEdit.text():
+			if cursor.execute("SELECT * FROM Booking WHERE user_name=%s AND date=%s AND numPiscina=%s", (uss.username, fecha.toString("yyyy-MM-dd"), self.numContactLineEdit.text())):
+				cursor.execute("DELETE FROM Booking WHERE user_name=%s AND date=%s AND numPiscina=%s", (uss.username, fecha.toString("yyyy-MM-dd"), self.numContactLineEdit.text()))
+				db.commit()
+				self.label.setText("Reserva Eliminada con Éxito")
+				time.sleep(2)
+				self.close()
+			else:
+				self.label.setText("No existe dicha reserva")
+		else:
+			self.label.setText("No se ha especificado código de piscina")
+
+	def cancel(self):
+		self.close()
 
 class book(QtWidgets.QMainWindow, Ui_MainWindowx):
 	def __init__(self, *args, **kwargs):
@@ -153,8 +177,13 @@ class menuIntermedio(QtWidgets.QMainWindow, Ui_MainWindows):
 		self.setupUi(self)
 		self.preBusqueda=preBusqueda()
 		self.booking=book()
+		self.cancel=cancel()
 		self.commandLinkButton.clicked.connect(self.goPreBusqueda)
 		self.commandLinkButton_2.clicked.connect(self.gobook)
+		self.commandLinkButton_3.clicked.connect(self.cancelReserva)
+
+	def cancelReserva(self):
+		self.cancel.show()
 
 	def gobook(self):
 		self.booking.show()

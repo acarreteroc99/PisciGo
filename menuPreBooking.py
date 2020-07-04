@@ -47,6 +47,19 @@ class Ui_MainWindows(object):
         self.label = QtWidgets.QLabel(self.centralwidget)
         self.label.setGeometry(QtCore.QRect(160, 50, 201, 201))
         self.label.setObjectName("label")
+        self.verticalLayoutWidget_3 = QtWidgets.QWidget(self.centralwidget)
+        self.verticalLayoutWidget_3.setGeometry(QtCore.QRect(110, 430, 321, 51))
+        self.verticalLayoutWidget_3.setObjectName("verticalLayoutWidget_3")
+        self.verticalLayout_3 = QtWidgets.QVBoxLayout(self.verticalLayoutWidget_3)
+        self.verticalLayout_3.setContentsMargins(0, 0, 0, 0)
+        self.verticalLayout_3.setObjectName("verticalLayout_3")
+        self.commandLinkButton_3 = QtWidgets.QCommandLinkButton(self.verticalLayoutWidget_3)
+        self.commandLinkButton_3.setStyleSheet("font: 11pt \"Candara\";\n"
+"border: 2px solid white; \n"
+"border-radius: 10px; \n"
+"color: white; ")
+        self.commandLinkButton_3.setObjectName("commandLinkButton_3")
+        self.verticalLayout_3.addWidget(self.commandLinkButton_3)
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(MainWindow)
         self.menubar.setGeometry(QtCore.QRect(0, 0, 533, 21))
@@ -65,6 +78,7 @@ class Ui_MainWindows(object):
         self.commandLinkButton.setText(_translate("MainWindow", "Consultar información sobre una piscina"))
         self.commandLinkButton_2.setText(_translate("MainWindow", "Realizar reserva"))
         self.label.setText(_translate("MainWindow", "<html><head/><body><p><img src=\":/Logo/Logo.png\" width=\"200\" height=\"200\"/></p></body></html>"))
+        self.commandLinkButton_3.setText(_translate("MainWindow", "Cancelar reserva"))
 import Resources_rc
 
 
